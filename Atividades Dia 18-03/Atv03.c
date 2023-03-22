@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 int main () {
 
@@ -7,8 +6,7 @@ int main () {
     float fl;
     double duplo;
     char letra;
-    char string[30];
-    int Hexa;
+    char string[100];
 
     printf("Digite o inteiro\n");
     scanf("%d", &x);
@@ -20,12 +18,12 @@ int main () {
     scanf(" %c", &letra);
     fflush(stdin);
     printf("Digite a frase\n");
-    gets(string);
+    fgets(string, 100, stdin);
 
-    printf("Numero inteiro: %d", x);
+    printf("Numero inteiro: %3d", x);
     printf("\nNumeros reais:\n%.3f\n%.3lf", fl, duplo);
     printf("\nLetra: %c", letra);
     printf("\nString: %s", string);
-    printf("\nEndereco: %x", &Hexa);
+    printf("Endereco: %x", &x);
     return 0;
 }
