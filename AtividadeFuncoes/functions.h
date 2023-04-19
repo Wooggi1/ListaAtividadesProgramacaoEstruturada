@@ -65,8 +65,8 @@ float RankineToKelvin(float rankine) {
     return kelvin;
 }
 
-float FuncaoRandom(float k, float f) {
-    float c;
-    c = k - f + 275.15;
-    return c;
+float FuncaoRandom(float kelvin, float fahrenheit) {
+    float celsius;
+    celsius = kelvin - fahrenheit + 275.15;
+    return celsius;
 }
