@@ -57,6 +57,12 @@ int main() {
             scanf("%f", &rankine);
             printf("%.1f Rankine em Kelvin: %.1f\n", rankine, RankineToKelvin(rankine));
             break;
+        case 9:
+            printf("Digite o valor Kelvin\n");
+            scanf("%f", &kelvin);
+            printf("Digite o valor Fahrenheit\n");
+            scanf("%f", &fahrenheit);
+            printf("O valor da funcao = %.1f\n", FuncaoRandom(kelvin, fahrenheit));
         }
     }
     

@@ -11,6 +11,7 @@ int AbrirMenu() {
     printf("6 - Reaumur para Celsius\n");
     printf("7 - Kelvin para Rankine\n");
     printf("8 - Rankine para Kelvin\n");
+    printf("9 - Funcao Aleatoria da Prof\n");
     scanf("%d", &opcao);
 
     return opcao;
@@ -62,4 +63,10 @@ float RankineToKelvin(float rankine) {
     float kelvin;
     kelvin = rankine/1.8;
     return kelvin;
+}
+
+float FuncaoRandom(float k, float f) {
+    float c;
+    c = k - f + 275.15;
+    return c;
 }
