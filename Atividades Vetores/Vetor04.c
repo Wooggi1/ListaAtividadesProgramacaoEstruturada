@@ -13,7 +13,7 @@ int main(){
         scanf("%d", &vetor[i]);
     }
 
-    printf("Digite o numero desejado\n");
+    printf("Digite o numero desejado: ");
     scanf("%d", &numero);
 
     for(int i = 0; i < tamanho; i++)
@@ -22,7 +22,13 @@ int main(){
             contador += 1;
             printf("Encontrado nas posicoes %d\n", i);
         }
+        else{
+            printf("Numero nao encontrado no vetor\n");
+            return 0;
+        }
     }
 
     printf("O numero %d foi encontrado %d vezes no vetor\n", numero, contador);
+
+    return 0;
 }
